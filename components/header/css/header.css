@@ -1,0 +1,63 @@
+/*header css*/
+.header{
+	background-image:url('../../../img/headerBackgroud.jpg');
+	background-position: bottom;
+	background-size:cover;
+}
+.header .logo a {display: inline-block;}
+.header .logo img{    width: 150px;}
+.navMenu {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.navMenu ul{margin:0px; padding:0px;}
+.navMenu ul li{    
+	list-style: none;
+    display: inline-block;
+    margin: 0px 30px;
+}
+.navMenu ul li a{ display: inline-block; }
+
+
+.profileMenu {   
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.profileMenu ul{margin:0px; padding:0px;}
+.profileMenu ul li{    
+	list-style: none;
+    display: inline-block;
+}
+.profileMenu ul li a{ display: inline-block; }
+.profileMenu ul li .profileName{
+color:#fff;
+ margin-right: 15px;
+}
+.profileMenu ul li .logoutButton{ 
+	color: #000;
+    background: #88effc;
+    padding: 1px 10px;
+    border-radius: 4px;
+   
+         }
+
+         
+         @media screen and (max-width:768px){
+             .profileContainer{
+                 position: absolute;    
+             }
+             .header .logo img {
+                width: 100px;
+             }
+             
+         }
+
+/*end header css*/
+
+
+
+

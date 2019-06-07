@@ -1,0 +1,35 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+.hideActiveStyle:focus{
+  box-shadow: none;
+}
+
+.fontBold{
+	font-weight: bold;
+}
+
+.paddingTop15{
+	padding-top:15px;
+}
+.paddingBottom15{
+	padding-bottom:15px;
+}
+.themeColor{
+	color:#086c59;
+}
+a{
+	transition: all 0.5s;
+}
+ul.remDefHover li a:hover{
+	text-decoration: none;
+	color: #000;
+	transition: all 0.5s;
+}
+
+.noListStyle li{
+	list-style: none;
+}
+ul{margin:0px;}

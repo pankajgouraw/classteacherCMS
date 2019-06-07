@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>class teacher development</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animate.css">
+	<!-- bootstrap 4 css -->
+	<script src="js/jquery.js"></script>
+	<!-- bootstrap 4 -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/format.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<!-- main container -->
+	<div class="loginWrapper">
+		<!-- digital text container -->
+		<div class="loginWrapperItems loginTextContainer animated slideInLeft  ">
+			<h1>digital</h1>	
+			<h2>interactive curriculum</h2>
+		</div>
+		<!-- digital text container end -->
+		<!-- login form container -->
+		<div class="loginWrapperItems loginFormContainer">
+                    <!--<form class="animated zoomIn">-->
+                   <form class="animated zoomIn" method="POST" action="http://localhost:8080/dic/users/home.ct" onsubmit="window.open('http://localhost:8080/cs/dashboard/index.html')">
+
+				    <div class="form-group row loginLogo ">
+				    	<div class="col-sm-12">
+				    		<a href="index.html">
+				    			<img src="img/logo.png" alt="" >
+				    		</a>
+				    	</div>
+				    </div>
+					<div class="form-group row">
+					    <label class="col-sm-4 col-form-label">User Name</label>
+					    <div class="col-sm-8">
+					      <input type="text" id="userName" name="userName"  class="form-control hideActiveStyle"  value="" placeholder="User" required>
+					    </div>
+					</div>
+					<div class="form-group row">
+					    <label  class="col-sm-4 col-form-label">Password</label>
+					    <div class="col-sm-8">
+                                                <input type="password" name="password" class="form-control hideActiveStyle" id="password" placeholder="Password" required>
+					    </div>
+					</div>
+					<div class="form-group row loginButton">
+						<div class="col-sm-12">
+                                                            <button onclick="callChekVessionUpdate()"  type="submit" id="loginBtn" class="fontBold btn btn-warning hideActiveStyle" >Login</button>
+						</div>
+					</div>
+			</form>
+		</div>
+		<!-- end login form container -->
+	</div>
+	<!-- main container end -->
+        <script>
+            $U.login = true;
+            function callChekVessionUpdate(){
+                l = true;
+		var urlglb='';
+
+
+            }
+        </script>
+        <script src="js/script.js"></script>
+</body>
+</html>

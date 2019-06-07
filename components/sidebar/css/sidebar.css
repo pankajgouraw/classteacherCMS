@@ -1,0 +1,102 @@
+/*sidebar*/
+.sidebar{margin-top:10px;}
+.sidebarWrapper{
+	/*padding-right: 0px;*/
+	background: #ddd;
+	height: 74vh;
+}
+
+.subj_container{
+    background: #63D775;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.topic_container{
+    background: #63D775;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.chapt_container{
+    background:#41B153;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sidebar .accordianContainer div{}
+.sidebar .accordianContainer{
+display: flex;
+padding: 7px 5px 7px 10px;
+border-bottom:1px solid #ddd;
+}
+
+.sidebar .accordianHeader{    flex-grow: 22; color:#fff;}
+.sidebar .accordianIcon{ transition:all 0.5s; text-align:center;    flex-grow: 1;color:#FFf;}
+
+.sidebar .accordinaBox{
+    background: #16a086;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom:10px;
+
+}
+
+.sidebar .accordinaBox ul li:last-child{border-bottom: none;}
+.sidebar .accordinaBox ul li:first-child{
+	border-top:1px solid #15a085;
+}
+.sidebar .accordinaBox ul li{
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0px;
+    margin: 0px 12px;
+    color:#fff;
+}
+
+.sidebar .accordinaBox li{
+	cursor:pointer;
+}
+
+.rotateArrow{
+	    transform: rotate(-180deg);
+    text-align: center;
+    transition:all 0.5s;
+}
+.sidebar .accordinaBox ul{
+    display: none;
+    max-height: 200px;
+    overflow-y:auto;
+    /*border-bottom: 5px solid #16a086;*/
+}
+
+.sidebar .accordinaBox:first-child ul{
+  display: block;
+}
+
+/*scroll bar style*/
+/* width */
+/*::-webkit-scrollbar {
+  width: 5px;
+}*/
+
+/* Track */
+/*::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}*/
+
+/* Handle */
+/*::-webkit-scrollbar-thumb {
+  background: #888; 
+}*/
+
+/* Handle on hover */
+/*::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}*/
+
+
+@media screen and (max-width:768px){
+    .sidebarWrapper{
+            height: auto;
+            padding-bottom: 5px;
+     }
+}
+
+/*end sidebar*/

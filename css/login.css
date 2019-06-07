@@ -1,0 +1,93 @@
+/*color variable*/
+@font-face {
+  font-family: myriad;
+  src: url("../fonts/myriadpro-bold.otf"); }
+.loginWrapper {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/loginBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  overflow: auto; background-position: bottom;}
+
+.loginWrapperItems {
+  text-align: center;
+  flex-grow: 1; }
+
+.loginFormContainer input:focus {
+  border: 1px solid #1a5d50;
+  box-shadow: 0px 0px 6px #414141;
+  transition: all 0.5s; }
+.loginFormContainer input {
+  border: 1px solid #1a5d50;
+  transition: all 0.5s; }
+.loginFormContainer .loginButton {
+  text-align: right;
+  padding-top: 10px; }
+  .loginFormContainer .loginButton button {
+    color: #fff;
+    background: #fa8420; }
+.loginFormContainer form {
+  width: 400px;
+  border: 2px solid #1a5d50;
+  padding: 50px 20px;
+  margin: auto;
+  border-radius: 10px;
+  background: #9BE7D8;
+  transition: all 0.5s; }
+.loginFormContainer form:hover {
+  box-shadow: 0px 0px 7px #29a088;
+  transition: all 0.5s; }
+.loginFormContainer .col-form-label {
+  text-align: left;
+  text-align: left;
+  font-weight: bold;
+  font-family: myriad;
+  color: #1a5d50; }
+.loginFormContainer .loginLogo {
+  padding-bottom: 60px; }
+
+.loginTextContainer {
+  color: #1a5d50;
+  text-transform: uppercase;
+  font-family: myriad; }
+  .loginTextContainer h1 {
+    font-size: 150px;
+    margin: 0px;
+    line-height: 1; }
+  .loginTextContainer h2 {
+    font-size: 44px; }
+
+@media screen and (max-width: 1024px) {
+  .loginTextContainer h1 {
+    font-size: 90px; }
+  .loginTextContainer h2 {
+    font-size: 26px; } }
+@media screen and (max-width: 768px) {
+  .loginWrapper {
+    flex-direction: column; }
+    .loginWrapper form {
+      margin-bottom: 50px; }
+
+  .loginTextContainer {
+    margin-top: 100px;
+    margin-bottom: 40px; }
+    .loginTextContainer h1 {
+      font-size: 90px; }
+    .loginTextContainer h2 {
+      font-size: 26px; } }
+@media screen and (max-width: 400px) {
+  .loginFormContainer form {
+    width: 280px; }
+
+  .loginTextContainer h1 {
+    font-size: 80px; }
+  .loginTextContainer h2 {
+    font-size: 23px; } }
+
+/*# sourceMappingURL=login.css.map */

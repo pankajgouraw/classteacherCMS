@@ -1,0 +1,17 @@
+footer{
+    background: url(../../../img/footer.jpg);
+    height: 74px;
+    position: fixed;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+@media screen and (max-width:768px){
+    footer{
+        position: relative;
+    }
+}

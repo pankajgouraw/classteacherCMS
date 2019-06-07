@@ -1,0 +1,82 @@
+
+/*navbar css*/
+.navbarContiner{
+    background: #ddd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbarContiner ul{
+		display: flex;
+		flex-wrap: wrap;
+
+}
+.navbarContiner ul li a{color:#fff; display: block;}
+.navbarContiner ul li{
+
+	transition: all 0.5s;
+	background: #15a085;
+	flex-grow: 1;
+    text-align: center;
+    margin: 0px 5px; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 3px 5px;
+}
+.navbarContiner ul li:first-child{margin-left:0px;}
+.navbarContiner ul li:last-child{margin-right:0px;}
+.navbarContiner li a:hover{text-decoration: none;}
+.navbarContiner ul li:hover a{ color:#000; transition: all 0.5s; }
+.navbarContiner ul li:hover{
+	transition: all 0.5s;
+	background: #eabc00;
+}
+
+
+.dataNavbar .item{
+    transition: all 0.5s;
+}
+.dataNavbar .item:hover{
+        cursor: pointer;
+    background: steelblue;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.selectedLiField a{
+        color:#000 !important;
+}
+
+.selectedLiField{
+    
+    background: #eabc00 !important;
+}
+
+ @media screen and (max-width:768px){
+             
+             .navMenu {
+                border-top: 1px solid #fff;
+                margin-top: 15px;
+                padding-bottom: 5px;
+            }
+            
+            .navbarContiner ul li{
+                width:100px;
+                margin-bottom:10px !important;
+            }
+            .navbarContiner ul li:first-child{
+                margin-left:5px !important;
+            }
+            
+             .navbarContiner ul li:last-child{
+                margin-right:5px !important;
+            }
+            
+            .navMenu ul li{
+                    margin: 0px 15px;
+            }
+            
+         }
+         
+         
+
+/*navbar css end*/

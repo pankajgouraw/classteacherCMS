@@ -7,8 +7,11 @@ $(document).ready(function () {
 //        }else{
 //          $(this).attr("disabled", false).off('on');
 //        }
-        
 //        $(this).attr("disabled", "disabled").off('click');
+
+        if($(".subj_container").css('display')=='none'){
+            return false;
+        }
         
         $('.accordianContainer').removeClass('Activeopen');
         $('.accordianContainer').addClass('DeactiveOpen');

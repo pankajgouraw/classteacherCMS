@@ -3,21 +3,17 @@
 .sidebarWrapper{
 	/*padding-right: 0px;*/
 	background: #ddd;
-	height: 74vh;
+	min-height: 74vh;
 }
 
-.subj_container{
-    background: #63D775;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
+
 .topic_container{
-    background: #63D775;
+    background: #26B93D;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 .chapt_container{
-    background:#41B153;
+    background:#AA44AD;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -31,6 +27,14 @@ border-bottom:1px solid #ddd;
 .sidebar .accordianHeader{    flex-grow: 22; color:#fff;}
 .sidebar .accordianIcon{ transition:all 0.5s; text-align:center;    flex-grow: 1;color:#FFf;}
 
+.accordinaBox {
+    background: #63D775;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.subj_showHide{
+    display:none !important;
+}
 .sidebar .accordinaBox{
     background: #16a086;
     border-top-left-radius: 10px;
@@ -38,16 +42,21 @@ border-bottom:1px solid #ddd;
     margin-bottom:10px;
 
 }
-
+.subj_container{
+    border-top:none;
+}
 .sidebar .accordinaBox ul li:last-child{border-bottom: none;}
 .sidebar .accordinaBox ul li:first-child{
-	border-top:1px solid #15a085;
+	/*border-top:1px solid #15a085;*/
 }
 .sidebar .accordinaBox ul li{
     border-bottom: 1px solid #ddd;
-    padding: 5px 0px;
-    margin: 0px 12px;
+    padding: 5px 12px;
     color:#fff;
+}
+.sidebar .accordinaBox ul li:hover{
+    background:#07735f;
+    transition:0.5s all;
 }
 
 .sidebar .accordinaBox li{

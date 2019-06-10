@@ -69,17 +69,7 @@ function showActivity(){
             $('.dataCollection').html(ActText); 
         }else if(typeof items =="undefined"){
             $('.dataCollection').empty();
-        }
-       
-           
-        
-    
-        
-//       if(items==undefined){
-//           $('.dataCollection').empty();  
-//       }
-        
-   
+        }  
 }
 
 var allExpItem = [];
@@ -98,20 +88,6 @@ $(document).ready(function () {
         autoWidth: true,
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
     });
-
-    //   $('.owl-nav').removeClass('disabled');
-    //   $('.owl-nav').click(function(){
-    //       $('.owl-nav').removeClass('disabled');
-    //   });
-    //}
-
-    //slideAnimation();
-
-
-
-
-    //class click function to show the all chapters and subjects
-
 
     //ajax call for fetching first data
 
@@ -134,14 +110,8 @@ $(document).ready(function () {
 
     });
 
-
-
-
     // function to update subject and topics
     function getClass(x) {
-        //        class id
-        //        console.log("class id: " + x);
-
         //  default text for sidebar menu
         $('.subj_container .accordianHeader').text("Subject");
         $('.chapt_container .accordianHeader').text("Chapter");
@@ -220,6 +190,9 @@ $(document).ready(function () {
     // subject 
 
     $("aside").on("click", ".accordinaBox .ulsubjects li", function () {
+        $('.subj_container').removeClass('subj_showHide');
+        $(".ulsubjects li").show();
+        $(this).hide();
         var subname = $(this).text();
         var subid = $(this).data('subid');
         var mainsubid = $(this).data('mainsubid');
@@ -265,6 +238,10 @@ $(document).ready(function () {
     //chapter 
 
     $("aside").on("click", ".accordinaBox #ulchapters li", function () {
+        
+        $("#ulchapters li").show();
+        $(this).hide();
+        
         var subname = $(this).text();
         var subid = $(this).data('subid');
         var mainsubid = $(this).data('mainsubid');
@@ -275,12 +252,6 @@ $(document).ready(function () {
         //console.log("subName :"+subname+", subid : "+ subid+ ",mainsubid: "+mainsubid);
         subjecttopicfunction(mainsubid, subid, subname);
     });
-
-
-    // function merge in explation and arrange the nav sequence
-    //function arrangeSequence(){
-    //    
-    //}
 
 
     // get modules 
@@ -520,6 +491,9 @@ $(document).ready(function () {
     // topic
 
     $("aside").on("click", ".accordinaBox #ultopic li", function () {
+        
+        $('#ultopic li').show();
+        $(this).hide();
         $("#slideContainer").show();
         var subname = $(this).text();
         var subid = $(this).data('subid');

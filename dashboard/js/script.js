@@ -24,33 +24,36 @@ function contentUrl(contentUrl,moduleId){
     //mp4 and m4v file 
     if (contentUrl.split(".").pop().toLowerCase() == "mp4" || contentUrl.split(".").pop().toLowerCase() == "m4v") // to support .m4v,.mp4 file type
     {
-        console.log(documentUrl);
-                $('.playerContainer').fadeIn(1000);
-                $('.playerContainer .videoContainer img').hide().attr('src','');
-                $('.playerContainer .videoContainer object').hide().attr('data','');
-                $('.playerContainer .videoContainer video').attr('src',documentUrl).show();
+//                console.log(documentUrl);
+//                $('.playerContainer').fadeIn(1000);
+//                $('.playerContainer .videoContainer img').hide().attr('src','');
+//                $('.playerContainer .videoContainer object').hide().attr('data','');
+//                $('.playerContainer .videoContainer video').attr('src',documentUrl).show();
+                  window.open(documentUrl, '_blank');
                 
 
 
     }
     //swf file
-    if (contentUrl.split(".").pop() == "swf"){    
+    if (contentUrl.split(".").pop().toLowerCase() == "swf"){    
 //                console.log("i am swf");
-                $('.playerContainer').fadeIn(1000);
-                $('.playerContainer .videoContainer img').hide().attr('src','');
-                $('.playerContainer .videoContainer video').hide().attr('src','');
-                $('.playerContainer .videoContainer object').show().attr('data',documentUrl);
+//                $('.playerContainer').fadeIn(1000);
+//                $('.playerContainer .videoContainer img').hide().attr('src','');
+//                $('.playerContainer .videoContainer video').hide().attr('src','');
+//                $('.playerContainer .videoContainer object').show().attr('data',documentUrl);
+                  window.open(documentUrl, '_blank');
 
     }
     
 //    jpg image and png image
 
 if(contentUrl.split(".").pop().toLowerCase() == "png" || contentUrl.split(".").pop().toLowerCase() == "jpg" || contentUrl.split(".").pop().toLowerCase() == "jpeg"){
-                console.log(documentUrl);        
-                $('.playerContainer').fadeIn(1000);
-                $('.playerContainer .videoContainer video').hide().attr('src','');
-                $('.playerContainer .videoContainer object').hide().attr('data','');
-                $('.playerContainer .videoContainer img').show().attr('src',documentUrl);
+//                console.log(documentUrl);        
+//                $('.playerContainer').fadeIn(1000);
+//                $('.playerContainer .videoContainer video').hide().attr('src','');
+//                $('.playerContainer .videoContainer object').hide().attr('data','');
+//                $('.playerContainer .videoContainer img').show().attr('src',documentUrl);
+                    window.open(documentUrl, '_blank');
 }
   
 }  //end function to play content
@@ -66,7 +69,7 @@ function showActivity(){
             for (var j = 0; j < items.length; j++) {
             ActText = ActText + showMainItems(items[j].moduleId,items[j].thumbnailUrl,items[j].moduleName,items[j].contentUrl);
             }
-            $('.dataCollection').html(ActText); 
+            $('.dataCollection').html(ActText).removeClass('hide'); 
         }else if(typeof items =="undefined"){
             $('.dataCollection').empty();
         }  
@@ -139,9 +142,14 @@ $(document).ready(function () {
         }); // end document ready function
     }
     // end function to update subject and topics
+    
+    
+    //select the class list
 
     $("nav").on("click", ".navbarContiner .allClassList li", function () {
+        $(".subj_container").addClass("subj_showHide");
         $('.dataCollection').empty();
+         $('.dataCollection').addClass('hide');
         
         $('#slideContainer').empty();
         //to select the nav item
@@ -261,6 +269,7 @@ $(document).ready(function () {
         var mainDiv = $('#slideContainer');
         //json
         console.log("url :" + url);
+        $('.loader').show();
         $.ajax({
             url: url,
             dataType: 'json',
@@ -268,13 +277,15 @@ $(document).ready(function () {
                 console.log("JSON failed to load modules");
             },
             success: function (results) {
+                $('.loader').hide();
                 mainData = results;
+//                destroy owl carousel
                 $(".owl-carousel").owlCarousel('destroy');
                 var items = mainData.nameList;
 
                 if (items == undefined) {
                     $('#slideContainer').empty();
-                    $('.dataCollection').html("<h3>Data not available...</h3>");
+                    $('.dataCollection').html("<h3>Data not available...</h3>").removeClass('hide');
                     return false;
                 }
                 console.log("all name list data :" + items);
@@ -353,12 +364,16 @@ $(document).ready(function () {
                 $('.owl-carousel').owlCarousel({
                     nav: true,
                     // items:6,
+                    margin:2,
                     dots: false,
                     loop: false,
                     lazyLoad: true,
                     autoWidth: true,
                     navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
                 });
+                
+                 $('.owl-item .owlItemActive').parent().addClass('navActive');
+                
 
 
             } // end success function
@@ -370,11 +385,15 @@ $(document).ready(function () {
     //get the all navitems
 
     $('body').on('click', '.owl-item .item', function () {
+        $(".dataCollection").removeClass('hide');
         var getText = $(this).text();
         var mainContiner = $('.dataCollection');
         var text = '';
         $('.owl-item .item').removeClass('owlItemActive');
         $(this).addClass('owlItemActive');
+        
+        $('.owl-item .item').parent().removeClass('navActive');
+        $(this).parent().addClass('navActive');
         //   console.log(mainData[getText]);
         var items = mainData[getText];
 
@@ -459,6 +478,7 @@ $(document).ready(function () {
         var url = baseUrl + "/topics/getTopics/" + mainsubid + "/" + subid + ".json";
         //console.log(url);
         $(document).ready(function () {
+            
             $.ajax({
                 url: url,
                 dataType: 'json',
@@ -480,7 +500,6 @@ $(document).ready(function () {
                         $("#ulsubtopic").empty();
                         $('#ulsubtopic').slideUp();
                     }
-
                     // console.log(text);
                 } // end of success fn
             }); // end of Ajax call
@@ -488,10 +507,10 @@ $(document).ready(function () {
 
     }
 
-    // topic
+    // topic function
 
     $("aside").on("click", ".accordinaBox #ultopic li", function () {
-        
+         $('.dataCollection').addClass('hide');
         $('#ultopic li').show();
         $(this).hide();
         $("#slideContainer").show();

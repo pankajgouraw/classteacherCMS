@@ -1,6 +1,6 @@
 .dataNavbar .owl-nav{
     position: absolute;
-    top: 20px;
+    top: 25px;
     width: 100%;
     z-index: -1;
     background: red;
@@ -8,8 +8,10 @@
 
 #slideContainer{display:none;}
 .owlItemActive{
-     background: steelblue !important;
-     color: #fff;
+    background: #eabc00 !important;
+    color: #000 !important;
+    font-weight: 600;
+    
 }
 
 
@@ -39,27 +41,78 @@
 }
 
 .dataNavbar .item{
-    background: #A7DEF5;
+    background: #00C4CC;
     margin: 15px 10px;
     text-align: center;
     border-top-right-radius: 30px;
     padding: 5px;
     width:150px;
+    color:#fff;
 }
 
-.dataCollection{ display: flex; flex-wrap: wrap;}
-.dataCollection .dataItem {width: 150px; margin-right:20px; transition:all 0.5s; cursor:pointer;}
+.hide{
+    display: none !important;
+}
+.owl-item{
+    /*background:#fff;*/
+    z-index:9;
+}
+
+.classShadow{
+    box-shadow: 1px 3px 4px #5d5d5d;
+}
+
+
+
+.loader{
+    left:50%;
+    right:50%;
+    position:absolute;
+    transform:translate(-50%,50%);
+    z-index:99;
+    display:none;
+}
+.dataCollection{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-top: -2px;
+    background: #fff;
+    box-shadow: 0px 0px 8px #b7b7b7;
+    /*z-index: 9999;*/
+    position:relative;
+    margin-bottom:60px;
+}
+.dataCollection .dataItem {
+    width: 250px;
+    margin-right: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 15px;
+    /*border: 1px solid red;*/
+    margin-bottom:15px;
+   background: #f2f2f2;
+    box-shadow: 0 3px 3px #c1c1c2;
+}
+.dataCollection .dataItem:hover{
+        transition: all 0.5s;
+   box-shadow: 0px 3px 8px #969696;
+
+
+}
 .dataCollection .dataItem .dataimgContainer{
 border: 1px solid #3ad6b8;
-    width: 150px;
-    height: 111px;
+    /*width: 150px;*/
+    height: 150px;
     overflow: hidden;
     border-radius: 5px;
 }
 
 .dataCollection .dataItem img{
+    transition:all 0.5s;
 width:100%;
-transition:all 0.5s;
+
+height:100%;
 }
 
 .dataCollection .dataItem p{
@@ -70,8 +123,10 @@ transition:all 0.5s;
 }
 
 .dataCollection .dataItem:hover img{
-transition:all 0.5s;
-width:105%;
+    transition: all 0.5s;
+    /*object-fit: fill;*/
+    width: 105%;
+    height: 105%;
 }
 
 .playerContainer{
@@ -127,10 +182,22 @@ width:105%;
 #mainWrapper{
   width:80%; 
       padding: 0px 15px;
+      padding-top:5px; position:relative; 
 }
 #sidebarWrapper{
     width:20%;
         padding: 0px 15px;
+}
+
+.owl-stage-outer{
+        padding: 5px 5px;
+        padding-bottom:0px;
+        
+}
+
+.navActive{
+         box-shadow: 0px 0px 8px #b7b7b7;
+         background: #fff;
 }
 
 @media screen and (max-width:768px){

@@ -24,7 +24,7 @@ padding: 7px 5px 7px 10px;
 border-bottom:1px solid #ddd;
 }
 
-.sidebar .accordianHeader{    flex-grow: 22; color:#fff;}
+.sidebar .accordianHeader{    flex-grow: 22; color:#fff; font-weight:600;}
 .sidebar .accordianIcon{ transition:all 0.5s; text-align:center;    flex-grow: 1;color:#FFf;}
 
 .accordinaBox {
@@ -53,6 +53,7 @@ border-bottom:1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 5px 12px;
     color:#fff;
+        font-weight: 600;
 }
 .sidebar .accordinaBox ul li:hover{
     background:#07735f;
@@ -103,7 +104,7 @@ border-bottom:1px solid #ddd;
 
 @media screen and (max-width:768px){
     .sidebarWrapper{
-            height: auto;
+            min-height: auto;
             padding-bottom: 5px;
      }
 }

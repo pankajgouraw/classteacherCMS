@@ -12,36 +12,65 @@
     align-items: center;
     height: 100%;
 }
-.navMenu ul{margin:0px; padding:0px;}
+.navMenu ul{
+margin: 0px;
+padding: 0px;
+flex-grow: 1;
+}
 .navMenu ul li{    
 	list-style: none;
     display: inline-block;
     margin: 0px 30px;
 }
-.navMenu ul li a{ display: inline-block; }
+.navMenu ul li a{ display: inline-block; font-size:17px;  }
+.searchBox input{
+    border:1px;
+}
+.searchBox input:focus{
+    box-shadow:none;    
+}
 
+.searchBox .input-group-btn{
+    background: #fff;border-left: 1px solid #ddd;
 
+}
+.searchBox .input-group-btn button:active{
+   background: #EABC00; 
+}
+.searchBox .input-group-btn button{
+    border-radius: 0px;
+}
+.searchBox .input-group-btn button:focus{
+    box-shadow:none;
+}
 .profileMenu {   
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
 }
 .profileMenu ul{margin:0px; padding:0px;}
 .profileMenu ul li{    
 	list-style: none;
-    display: inline-block;
+    display: table-cell;
+vertical-align: middle;
 }
 .profileMenu ul li a{ display: inline-block; }
 .profileMenu ul li .profileName{
 color:#fff;
  margin-right: 15px;
+ font-weight: 600;
+font-size: 20px;
+text-align:center;
+line-height:23px;
 }
 .profileMenu ul li .logoutButton{ 
-	color: #000;
-    background: #88effc;
-    padding: 1px 10px;
-    border-radius: 4px;
+color: #fbf7f7;
+background: #1cae8f;
+padding: 1px 8px 5px 10px;
+border-radius: 4px;
+font-weight: 600;
+font-size: 17px;
    
          }
 

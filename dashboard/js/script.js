@@ -9,16 +9,16 @@ var showMainItems = function showMainItems(moduleId, thumbnailUrl, moduleName,co
 
 //display the data video mp4 flv 
 function contentUrl(contentUrl,moduleId){
-    
+    var h = $(window).height(); 
+var w = $(window).width(); 
+var isChromium = window.chrome;
+
             $('.playerContainer .videoContainer button').show();
-            
-    
     var documentUrl = baseUrl + "/dic/media/app/"+ moduleId +"" +contentUrl; // get the full url of content
     console.log("file url : "+ documentUrl);
    if (contentUrl.split(".").pop().toLowerCase() == "ppt" || contentUrl.split(".").pop().toLowerCase() == "pdf" || contentUrl.split(".").pop().toLowerCase() == "html" || contentUrl.split(".").pop().toLowerCase() == "doc" || contentUrl.split(".").pop().toLowerCase() == "docx" || contentUrl.split(".").pop().toLowerCase() == "flv") // to support/open .pdf,.doc,.docx file type in new tab
     {
-                 
-                    window.open(documentUrl, '_blank'); // open the pdf in a new window/tab
+                    window.open(documentUrl,'_blank','height='+screen.height+', width='+screen.width); // open the pdf in a new window/tab
                   
     }
     //mp4 and m4v file 
@@ -29,19 +29,27 @@ function contentUrl(contentUrl,moduleId){
 //                $('.playerContainer .videoContainer img').hide().attr('src','');
 //                $('.playerContainer .videoContainer object').hide().attr('data','');
 //                $('.playerContainer .videoContainer video').attr('src',documentUrl).show();
-                  window.open(documentUrl, '_blank');
-                
-
-
+                    if(isChromium){
+//                        var y = encodeURI(documentUrl);
+                       var myWindow = window.open('','myWindow','height='+screen.height+', width='+screen.width); // open the pdf in a new window/tab
+                        myWindow.document.write("<video width='100%' height='90%' controls='controls' autoplay='true' src="+documentUrl+">Your browser does not support the HTML5 Video element.</video>");
+                    } else {
+                        window.open(documentUrl,'_blank','height='+screen.height+', width='+screen.width); // open the pdf in a new window/tab
+                    }
     }
     //swf file
-    if (contentUrl.split(".").pop().toLowerCase() == "swf"){    
+    if (contentUrl.split(".").pop().toLowerCase() == "swf" || contentUrl.split(".").pop().toLowerCase() == "flv"){    
 //                console.log("i am swf");
-//                $('.playerContainer').fadeIn(1000);
-//                $('.playerContainer .videoContainer img').hide().attr('src','');
-//                $('.playerContainer .videoContainer video').hide().attr('src','');
-//                $('.playerContainer .videoContainer object').show().attr('data',documentUrl);
-                  window.open(documentUrl, '_blank');
+
+                  if(isChromium){
+                        $('.playerContainer').fadeIn(1000);
+                        $('.playerContainer .videoContainer img').hide().attr('src','');
+                        $('.playerContainer .videoContainer video').hide().attr('src','');
+                        $('.playerContainer .videoContainer object').show().attr('data',documentUrl);
+                    } else {
+                        window.open(documentUrl,'_blank','height='+screen.height+', width='+screen.width); // open the pdf in a new window/tab
+                    }
+                
 
     }
     
@@ -53,7 +61,7 @@ if(contentUrl.split(".").pop().toLowerCase() == "png" || contentUrl.split(".").p
 //                $('.playerContainer .videoContainer video').hide().attr('src','');
 //                $('.playerContainer .videoContainer object').hide().attr('data','');
 //                $('.playerContainer .videoContainer img').show().attr('src',documentUrl);
-                    window.open(documentUrl, '_blank');
+                     window.open(documentUrl,'_blank','height='+screen.height+', width='+screen.width); // open the pdf in a new window/tab
 }
   
 }  //end function to play content

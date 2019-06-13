@@ -40,8 +40,13 @@ flex-grow: 1;
 .searchBox .input-group-btn button{
     border-radius: 0px;
 }
+
 .searchBox .input-group-btn button:focus{
     box-shadow:none;
+}
+.searchBox .btn-default i{
+        font-size: 20px;
+    color: #ffc107;
 }
 .profileMenu {   
     display: flex;
@@ -82,6 +87,11 @@ font-size: 17px;
              .header .logo img {
                 width: 100px;
              }
+             .profileMenu{
+                 justify-content:flex-end;
+             }
+           
+                 
              
          }
 

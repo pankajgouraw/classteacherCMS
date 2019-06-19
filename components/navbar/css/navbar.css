@@ -94,9 +94,15 @@ border-top-right-radius: 10px;
             .navMenu ul li{
                     margin: 0px 15px;
             }
+            .navMenu > ul{
+                text-align:center;
+            }
+            .quickLinks{
+                text-align:left;
+            }
             
          }
          
-         
+    
 
 /*navbar css end*/

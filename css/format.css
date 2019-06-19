@@ -29,7 +29,7 @@ text-shadow: 1px 1px 4px #020202;
 a{
     transition: all 0.5s;
 }
-ul.remDefHover li a:hover{
+ul.remDefHover li:hover > a{
     text-decoration: none;
        color: #ffce05;
 text-shadow: 1px 1px 2px #020202;

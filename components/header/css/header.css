@@ -1,8 +1,8 @@
 /*header css*/
 .header{
-	background-image:url('../../../img/headerBackgroud.jpg');
-	background-position: bottom;
-	background-size:cover;
+    background-image:url('../../../img/headerBackgroud.jpg');
+    background-position: bottom;
+    background-size:cover;
 }
 .header .logo a {display: inline-block;}
 .header .logo img{    width: 150px;}
@@ -13,14 +13,14 @@
     height: 100%;
 }
 .navMenu ul{
-margin: 0px;
-padding: 0px;
-flex-grow: 1;
+    margin: 0px;
+    padding: 0px;
+    flex-grow: 1;
 }
 .navMenu ul li{    
-	list-style: none;
+    list-style: none;
     display: inline-block;
-    margin: 0px 30px;
+    margin: 0px 30px; padding: 13px 0px;
 }
 .navMenu ul li a{ display: inline-block; font-size:17px;  }
 .searchBox input{
@@ -35,7 +35,7 @@ flex-grow: 1;
 
 }
 .searchBox .input-group-btn button:active{
-   background: #EABC00; 
+    background: #EABC00; 
 }
 .searchBox .input-group-btn button{
     border-radius: 0px;
@@ -45,7 +45,7 @@ flex-grow: 1;
     box-shadow:none;
 }
 .searchBox .btn-default i{
-        font-size: 20px;
+    font-size: 20px;
     color: #ffc107;
 }
 .profileMenu {   
@@ -56,44 +56,110 @@ flex-grow: 1;
 }
 .profileMenu ul{margin:0px; padding:0px;}
 .profileMenu ul li{    
-	list-style: none;
+    list-style: none;
     display: table-cell;
-vertical-align: middle;
+    vertical-align: middle;
 }
 .profileMenu ul li a{ display: inline-block; }
 .profileMenu ul li .profileName{
-color:#fff;
- margin-right: 15px;
- font-weight: 600;
-font-size: 20px;
-text-align:center;
-line-height:23px;
+    color:#fff;
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align:center;
+    line-height:23px;
 }
 .profileMenu ul li .logoutButton{ 
-color: #fbf7f7;
-background: #1cae8f;
-padding: 1px 8px 5px 10px;
-border-radius: 4px;
-font-weight: 600;
-font-size: 17px;
-   
-         }
+    color: #fbf7f7;
+    background: #1cae8f;
+    padding: 1px 8px 5px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 17px;
 
-         
-         @media screen and (max-width:768px){
-             .profileContainer{
-                 position: absolute;    
-             }
-             .header .logo img {
-                width: 100px;
-             }
-             .profileMenu{
-                 justify-content:flex-end;
-             }
-           
-                 
-             
-         }
+}
+
+.quickLinks{
+    position:relative;             
+}
+
+.quickLinks ul li{
+display: block;
+margin: 0px;
+padding: 5px 5px;
+transation :0.5s all;
+text-transform:capitalize;
+}
+.quickLinks ul li a{
+    display:block;
+    color: #898989;
+    font-size:16px;
+    font-weight:600;
+}
+.quickLinks ul li a i{
+    float:right;
+    padding-top:5px;
+}
+
+.quickLinks:hover ul{
+    display:block;
+}
+.quickLinks > ul{
+    width: 280px;
+    position: absolute;
+    top: 50px;
+    z-index: 9;
+    background: #f2f2f2;
+    box-shadow: 0px 0px 7px #7d7a7a;
+    display:none;
+     left: -91px;
+     padding: 15px;
+}
+.quickLinks ul li:hover{
+/*    transation :0.5s all;
+    box-shadow: 0px 0px 4px #b0b0b0;*/
+}
+.quickLinks ul li:hover a{
+    text-shadow:none;
+    color: #ECBE04;
+}
+.quickLinks ul > .popArrow{
+    position:absolute;
+    left:50%;
+    height:15px;
+    width:15px;
+    top:-7px;
+    transform: translateX(-50%) rotate(45deg);
+    background:#f2f2f2;
+}
+.quickLinks ul .advanceTools:hover li a{
+  color: #898989;
+}
+.quickLinks ul .advanceTools li:hover a{
+   color: #ECBE04; 
+}
+.quickLinks ul .advanceTools li i{
+    float:none;
+    margin-right:5px;
+    font-size:12px;
+}
+.quickLinks ul .advanceTools li{
+    padding-left:15px;
+}
+
+
+@media screen and (max-width:768px){
+    .profileContainer{
+        position: absolute;    
+    }
+    .header .logo img {
+        width: 100px;
+    }
+    .profileMenu{
+        justify-content:flex-end;
+    }
+
+}
 
 /*end header css*/
 

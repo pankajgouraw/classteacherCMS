@@ -204,6 +204,47 @@ height:100%;
          background: #fff;
 }
 
+
+
+
+
+/*home page css*/
+.homeSidebar{margin-top: 15px;}
+.homeSidebar li:hover{
+    transition:0.5s all;    color:#fff;
+    background: #eabc00;
+}
+.homeSidebar li{
+ transition:0.5s all; 
+text-transform: capitalize;
+list-style: none;
+background:#15a085;
+margin-bottom: 10px;
+padding: 8px 10px;
+border-radius: 5px;
+color:#fff;
+font-weight: 500;
+cursor:pointer;
+}
+.homeSidebar .homeActive{
+    color:#fff;
+    background: #eabc00;
+}
+ #calendar {
+                max-width: 650px;
+                      }
+                    #mainWrapper{padding:15px; margin-bottom: 50px;}
+                    
+.fc-today
+{
+  background-color:#60D0BA !important;
+}
+.fc-day-header{
+    font-weight:500;
+}
+
+/*home page css end*/
+
 @media screen and (max-width:768px){
     .dataCollection{
        margin-left:0px;

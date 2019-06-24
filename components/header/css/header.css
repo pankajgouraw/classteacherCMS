@@ -146,7 +146,12 @@ text-transform:capitalize;
 .quickLinks ul .advanceTools li{
     padding-left:15px;
 }
-
+.quickLinks ul .advanceTools ul{
+    display:none;
+}
+.quickLinks > a i{
+   margin-right:3px; 
+}
 
 @media screen and (max-width:768px){
     .profileContainer{

@@ -1,6 +1,5 @@
 $(document).ready(function(){
-    $(".advanceTools").click(function(){
-      
-       alert("bhag sale"); 
+    $("header").on('click','.quickLinks .advanceTools', function(){
+       $(this).find('ul').slideToggle();
     })
 });

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <!-- common styling -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"> 
+        <!-- bootstrap 4 -->
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/format.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../components/header/css/header.css">
+        <!--<link rel="stylesheet" href="../components/navbar/css/navbar.css">-->
+        <link rel="stylesheet" href="../components/sidebar/css/sidebar.css">
+        <link rel="stylesheet" href="../components/footer/css/footer.css">
+                <link rel="stylesheet" href="../components/navbar/css/navbar.css">
+
+        <script src="../js/jquery.js"></script>
+<!--        <script src="../js/bootstrap.min.js"></script>-->
+        <script src="js/owl.carousel.min.js"></script>
+        <!--calernder code-->
+        <link href='packages/core/main.css' rel='stylesheet' />
+        <link href='packages/daygrid/main.css' rel='stylesheet' />
+        <link href='packages/timegrid/main.css' rel='stylesheet' />
+        <link href='packages/list/main.css' rel='stylesheet' />
+        <script src='packages/core/main.js'></script>
+        <script src='packages/interaction/main.js'></script>
+        <script src='packages/daygrid/main.js'></script>
+        <script src='packages/timegrid/main.js'></script>
+        <script src='packages/list/main.js'></script>
+        <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  var calendarEl = document.getElementById('calendar');
+
+                  var calendar = new FullCalendar.Calendar(calendarEl, {
+                    plugins: [ 'interaction', 'dayGrid', 'timeGrid'],
+                    header: {
+                      left: 'prev,next today',
+                      center: 'title',
+                      right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                    },
+//                     footer: {
+//                      left: 'prev,next today',
+//                      center: 'title',
+//                      right: 'dayGridMonth,timeGridWeek,timeGridDay'
+//                    },
+                    defaultDate: '2019-06-12',
+                    navLinks: true, // can click day/week names to navigate views
+                    businessHours: true, // display business hours
+                    editable: true
+                  
+                  });
+
+                  calendar.render();
+                });
+
+              </script>
+
+        <!--end calender code--> 
+        <style>
+            
+            .sidebarWrapper{
+                min-height:84vh;
+            }
+            .linkShadow{
+                text-shadow: none;
+                color:#fff;
+            }
+            .navMenu > .remDefHover  > li:first-child a{
+                color: #ffce05;
+                text-shadow: 1px 1px 4px #020202;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <!-- main container -->
+        <div class="pageWrapper">
+            <!-- header -->
+            <header>
+                <!--header coming from components/header-->
+            </header>
+
+            <!-- data container -->
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- sidebar container -->
+                    <div class=" sidebarWrapper" id="sidebarWrapper">
+                        <aside class="sidebar">
+                            <ul class="homeSidebar">
+                                <li class="homeActive">Welcome Teacher</li>
+                                <li>last view module</li>
+                                <li>Favourites</li>
+                                <li>Library</li>
+
+                            </ul>
+                        </aside>
+                    </div>
+                    <!-- side bar container end -->
+
+                    <!-- main data container -->
+                    <div class="" id="mainWrapper">
+                        <div id='calendar' class="homeData"></div>
+                    </div>
+                    <!--end main data container -->
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- footer -->
+            <footer id="footer" class="container-fluid">
+                <!--footer coming from components/footer-->
+            </footer>
+            <!-- footer end-->
+        </div>
+        <!-- main container end -->
+        <!--<script src="js/homegetComponent.js"></script>-->
+        <script src="../components/header/js/header.js"></script>
+
+        <!--<script src="js/flv.min.js"></script>-->
+        <script src="js/home.js"></script>
+    </body>
+</html>

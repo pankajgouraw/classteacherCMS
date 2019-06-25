@@ -223,7 +223,7 @@ margin-bottom: 10px;
 padding: 8px 10px;
 border-radius: 5px;
 color:#fff;
-font-weight: 500;
+font-weight: 600;
 cursor:pointer;
 }
 .homeSidebar .homeActive{
@@ -231,8 +231,8 @@ cursor:pointer;
     background: #eabc00;
 }
  #calendar {
-                max-width: 650px;
-                      }
+max-width: 650px;
+           }
                     #mainWrapper{padding:15px; margin-bottom: 50px;}
                     
 .fc-today
@@ -242,6 +242,213 @@ cursor:pointer;
 .fc-day-header{
     font-weight:500;
 }
+#viewModule h3{
+     flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  margin:0px;
+      font-weight: 600;
+    font-size: 15px;
+    padding-top:8px;
+}
+#viewModule{
+background: #e9ecef;
+padding: 15px;
+display:none;
+max-width: 650px; 
+}
+#viewModule select:focus{
+border-color:1px solid #ced4da;
+box-shadow:none;
+}
+#viewModule select{
+width:200px;
+
+}
+.viewModelData p.viewModelDate{
+    color: #8c9298;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.viewModelData p{
+        margin-bottom: 0px;font-size: 15px;
+}
+.viewModelData h4{
+    color:#17a2b8;
+         font-weight: 600;
+    font-size: 15px; 
+    text-transform: capitalize;margin-bottom: 0;
+}
+.viewModelContent{
+padding: 10px;
+margin-bottom: 10px;
+width: 100%;
+display: flex;
+background: #fff;
+}
+.viewModelData{
+    padding:10px;
+}
+.viewModelImgContainer{
+    width: 150px;
+height: 110px;
+position:relative;
+overflow: hidden;
+}
+.viewModelImgContainer img{
+    width: 100%;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+
+.viewModelHeader{
+    display: flex; 
+    margin-bottom:15px;
+}
+
+
+/*favourities*/
+.favouritesModelHeader h3{
+     flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  margin:0px;
+      font-weight: 600;
+    font-size: 15px;
+    padding-top:8px;
+}
+.favouritesModelData p.favouritesModelDate{
+    color: #8c9298;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.favouritesModelData p{
+        margin-bottom: 0px;font-size: 15px;
+}
+.favouritesModelData h4{
+    color:#17a2b8;
+         font-weight: 600;
+    font-size: 15px; 
+    text-transform: capitalize;margin-bottom: 0;
+}
+.favouritesModelContent{
+padding: 10px;
+margin-bottom: 10px;
+display: flex;
+background: #fff;
+}
+.favouritesModelData{
+    padding:10px;
+}
+
+.favouritesModelBody{
+    width: 48%;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.favouritesModelImgContainer{
+    width: 150px;
+height: 110px;
+position:relative;
+overflow: hidden;
+}
+.favouritesModelImgContainer img{
+    width: 100%;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+
+.favouritesModelHeader{
+    display: flex; 
+    margin-bottom:15px;
+}
+
+#favourites{
+  max-width: 650px; 
+  background: #e9ecef;
+  padding: 15px;
+  display:none;
+      overflow: auto;
+}
+/*end favourities*/
+
+/*library*/
+.libraryModelHeader h3{
+     flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  margin:0px;
+      font-weight: 600;
+    font-size: 15px;
+    padding-top:8px;
+}
+.libraryModelData p.libraryModelDate{
+    color: #8c9298;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.libraryModelData p{
+        margin-bottom: 0px;font-size: 15px;
+}
+.libraryModelData h4{
+    color:#17a2b8;
+         font-weight: 600;
+    font-size: 15px; 
+    text-transform: capitalize;margin-bottom: 0;
+}
+.libraryModelContent{
+padding: 10px;
+margin-bottom: 10px;
+display: flex;
+background: #fff;
+}
+.libraryModelData{
+    padding:10px;
+}
+
+.libraryModelBody{
+    width: 48%;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.libraryModelImgContainer{
+    width: 150px;
+height: 110px;
+position:relative;
+overflow: hidden;
+}
+.libraryModelImgContainer img{
+    width: 100%;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+
+.libraryModelHeader{
+    display: flex; 
+    margin-bottom:15px;
+}
+
+#library{
+  max-width: 650px; 
+  background: #e9ecef;
+  padding: 15px;
+  display:none;
+      overflow: auto;
+}
+/*library end*/
+
+
 
 /*home page css end*/
 
@@ -251,7 +458,9 @@ cursor:pointer;
        justify-content: space-evenly;
     }
     #mainWrapper{width:100%;}
+    .homeSidebarWrapper{ min-height: auto !important;}
     #sidebarWrapper{width:100%;}
+    .favouritesModelBody{width:100%; margin-left:0px; margin-right:0px;}
     
     .dataCollection .dataItem{margin-right:0px;}
 }

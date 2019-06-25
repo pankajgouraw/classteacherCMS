@@ -87,13 +87,13 @@
             <div class="container-fluid">
                 <div class="row">
                     <!-- sidebar container -->
-                    <div class=" sidebarWrapper" id="sidebarWrapper">
+                    <div class="sidebarWrapper homeSidebarWrapper" id="sidebarWrapper">
                         <aside class="sidebar">
                             <ul class="homeSidebar">
-                                <li class="homeActive">Welcome Teacher</li>
-                                <li>last view module</li>
-                                <li>Favourites</li>
-                                <li>Library</li>
+                                <li class="homeActive" data-module="calendar">Welcome Teacher</li>
+                                <li data-module="viewModule">last view module</li>
+                                <li data-module="favourites">Favourites</li>
+                                <li data-module="library">Library</li>
 
                             </ul>
                         </aside>
@@ -102,15 +102,133 @@
 
                     <!-- main data container -->
                     <div class="" id="mainWrapper">
+                        <!--calender-->
                         <div id='calendar' class="homeData"></div>
-                    </div>
+                        <!--calender end here-->
+                        
+                        <!--view all module-->
+                        <div id="viewModule" class="homeData">
+                            <div class="viewModelHeader">
+                                    <h3>Last View Module</h3>
+                                    <select class="form-control">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                            </div>
+                            <div class="viewModelBody">
+                                <div class="viewModelContent">
+                                    <div class="viewModelImgContainer">
+                                        <img src="img/img1.png" >
+                                    </div>
+                                    <div class="viewModelData">
+                                        
+                                        <h4>sdfsdfsdf</h4>
+                                        <p>Lorem ipsum doller amet </p>
+                                        <p class="viewModelDate">Last view on 16/05/2017 12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="viewModelBody">
+                                <div class="viewModelContent">
+                                    <div class="viewModelImgContainer">
+                                        <img src="img/img1.png" >
+                                    </div>
+                                    <div class="viewModelData">
+                                        
+                                        <h4>sdfsdfsdf</h4>
+                                        <p>Lorem ipsum doller amet </p>
+                                        <p class="viewModelDate">Last view on 16/05/2017 12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        <!--view all module end here-->
+                        
+                        <!--favourites-->
+                         <div id="favourites" class="homeData">
+                            <div class="favouritesModelHeader">
+                                    <h3>Favourites</h3>
+                           
+                            </div>
+                            <div class="favouritesModelBody">
+                                <div class="favouritesModelContent">
+                                    <div class="favouritesModelImgContainer">
+                                        <img src="img/img1.png" >
+                                    </div>
+                                    <div class="favouritesModelData">
+                                        
+                                        <h4>sdfsdfsdf</h4>
+                                        <p>Lorem ipsum doller amet </p>
+                                        <p class="favouritesModelDate">Last view on 16/05/2017 12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                                    <div class="favouritesModelBody">
+                                <div class="favouritesModelContent">
+                                    <div class="favouritesModelImgContainer">
+                                        <img src="img/img1.png" >
+                                    </div>
+                                    <div class="favouritesModelData">
+                                        
+                                        <h4>sdfsdfsdf</h4>
+                                        <p>Lorem ipsum doller amet </p>
+                                        <p class="favouritesModelDate">Last view on 16/05/2017 12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                         </div>
+                        
+                        <!--favourites  end-->
+                        
+                        <!--Library-->
+                        
+                          <div id="library" class="homeData">
+                            <div class="libraryModelHeader">
+                                    <h3>Library</h3>
+                           
+                            </div>
+                            <div class="libraryModelBody">
+                                <div class="libraryModelContent">
+                                    <div class="libraryModelImgContainer">
+                                        <img src="img/img1.png" >
+                                    </div>
+                                    <div class="libraryModelData">
+                                        
+                                        <h4>sdfsdfsdf</h4>
+                                        <p>Lorem ipsum doller amet </p>
+                                        <p class="libraryModelDate">Last view on 16/05/2017 12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                                    <div class="libraryModelBody">
+                                <div class="libraryModelContent">
+                                    <div class="libraryModelImgContainer">
+                                        <img src="img/img1.png" >
+                                    </div>
+                                    <div class="libraryModelData">
+                                        
+                                        <h4>sdfsdfsdf</h4>
+                                        <p>Lorem ipsum doller amet </p>
+                                        <p class="libraryModelDate">Last view on 16/05/2017 12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                         </div>
+            <!--Library end--> 
+                        
                     <!--end main data container -->
 
                 </div>
 
             </div>
 
-
+            </div>
 
 
             <!-- footer -->

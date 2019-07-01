@@ -13,6 +13,6 @@ footer{
 
 @media screen and (max-width:768px){
     footer{
-        position: relative;
+        /*position: relative;*/
     }
 }

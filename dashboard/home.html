@@ -10,15 +10,14 @@
         <link rel="stylesheet" href="../css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/format.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="../components/header/css/header.css">
         <!--<link rel="stylesheet" href="../components/navbar/css/navbar.css">-->
         <link rel="stylesheet" href="../components/sidebar/css/sidebar.css">
         <link rel="stylesheet" href="../components/footer/css/footer.css">
-                <link rel="stylesheet" href="../components/navbar/css/navbar.css">
+        <link rel="stylesheet" href="../components/navbar/css/navbar.css">
 
         <script src="../js/jquery.js"></script>
-<!--        <script src="../js/bootstrap.min.js"></script>-->
+        <!--        <script src="../js/bootstrap.min.js"></script>-->
         <script src="js/owl.carousel.min.js"></script>
         <!--calernder code-->
         <link href='packages/core/main.css' rel='stylesheet' />
@@ -31,15 +30,15 @@
         <script src='packages/timegrid/main.js'></script>
         <script src='packages/list/main.js'></script>
         <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                  var calendarEl = document.getElementById('calendar');
+            document.addEventListener('DOMContentLoaded', function () {
+                var calendarEl = document.getElementById('calendar');
 
-                  var calendar = new FullCalendar.Calendar(calendarEl, {
-                    plugins: [ 'interaction', 'dayGrid', 'timeGrid'],
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    plugins: ['interaction', 'dayGrid', 'timeGrid'],
                     header: {
-                      left: 'prev,next today',
-                      center: 'title',
-                      right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'dayGridMonth,timeGridWeek,timeGridDay'
                     },
 //                     footer: {
 //                      left: 'prev,next today',
@@ -50,17 +49,17 @@
                     navLinks: true, // can click day/week names to navigate views
                     businessHours: true, // display business hours
                     editable: true
-                  
-                  });
 
-                  calendar.render();
                 });
 
-              </script>
+                calendar.render();
+            });
+
+        </script>
 
         <!--end calender code--> 
         <style>
-            
+
             .sidebarWrapper{
                 min-height:84vh;
             }
@@ -72,7 +71,7 @@
                 color: #ffce05;
                 text-shadow: 1px 1px 4px #020202;
             }
-           
+
         </style>
     </head>
     <body>
@@ -105,17 +104,17 @@
                         <!--calender-->
                         <div id='calendar' class="homeData"></div>
                         <!--calender end here-->
-                        
+
                         <!--view all module-->
                         <div id="viewModule" class="homeData">
                             <div class="viewModelHeader">
-                                    <h3>Last View Module</h3>
-                                    <select class="form-control">
-                                      <option>1</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                    </select>
+                                <h3>Last View Module</h3>
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
                             </div>
                             <div class="viewModelBody">
                                 <div class="viewModelContent">
@@ -123,7 +122,7 @@
                                         <img src="img/img1.png" >
                                     </div>
                                     <div class="viewModelData">
-                                        
+
                                         <h4>sdfsdfsdf</h4>
                                         <p>Lorem ipsum doller amet </p>
                                         <p class="viewModelDate">Last view on 16/05/2017 12:00</p>
@@ -136,21 +135,21 @@
                                         <img src="img/img1.png" >
                                     </div>
                                     <div class="viewModelData">
-                                        
+
                                         <h4>sdfsdfsdf</h4>
                                         <p>Lorem ipsum doller amet </p>
                                         <p class="viewModelDate">Last view on 16/05/2017 12:00</p>
                                     </div>
                                 </div>
                             </div>
-                            </div>
+                        </div>
                         <!--view all module end here-->
-                        
+
                         <!--favourites-->
-                         <div id="favourites" class="homeData">
+                        <div id="favourites" class="homeData">
                             <div class="favouritesModelHeader">
-                                    <h3>Favourites</h3>
-                           
+                                <h3>Favourites</h3>
+
                             </div>
                             <div class="favouritesModelBody">
                                 <div class="favouritesModelContent">
@@ -158,38 +157,38 @@
                                         <img src="img/img1.png" >
                                     </div>
                                     <div class="favouritesModelData">
-                                        
+
                                         <h4>sdfsdfsdf</h4>
                                         <p>Lorem ipsum doller amet </p>
                                         <p class="favouritesModelDate">Last view on 16/05/2017 12:00</p>
                                     </div>
                                 </div>
                             </div>
-                             
-                                    <div class="favouritesModelBody">
+
+                            <div class="favouritesModelBody">
                                 <div class="favouritesModelContent">
                                     <div class="favouritesModelImgContainer">
                                         <img src="img/img1.png" >
                                     </div>
                                     <div class="favouritesModelData">
-                                        
+
                                         <h4>sdfsdfsdf</h4>
                                         <p>Lorem ipsum doller amet </p>
                                         <p class="favouritesModelDate">Last view on 16/05/2017 12:00</p>
                                     </div>
                                 </div>
                             </div>
-                             
-                         </div>
-                        
+
+                        </div>
+
                         <!--favourites  end-->
-                        
+
                         <!--Library-->
-                        
-                          <div id="library" class="homeData">
+
+                        <div id="library" class="homeData">
                             <div class="libraryModelHeader">
-                                    <h3>Library</h3>
-                           
+                                <h3>Library</h3>
+
                             </div>
                             <div class="libraryModelBody">
                                 <div class="libraryModelContent">
@@ -197,36 +196,45 @@
                                         <img src="img/img1.png" >
                                     </div>
                                     <div class="libraryModelData">
-                                        
+
                                         <h4>sdfsdfsdf</h4>
                                         <p>Lorem ipsum doller amet </p>
                                         <p class="libraryModelDate">Last view on 16/05/2017 12:00</p>
                                     </div>
                                 </div>
                             </div>
-                             
-                                    <div class="libraryModelBody">
+
+                            <div class="libraryModelBody">
                                 <div class="libraryModelContent">
                                     <div class="libraryModelImgContainer">
                                         <img src="img/img1.png" >
                                     </div>
                                     <div class="libraryModelData">
-                                        
+
                                         <h4>sdfsdfsdf</h4>
                                         <p>Lorem ipsum doller amet </p>
                                         <p class="libraryModelDate">Last view on 16/05/2017 12:00</p>
                                     </div>
                                 </div>
                             </div>
-                             
-                         </div>
-            <!--Library end--> 
-                        
-                    <!--end main data container -->
+
+                            <div class="libraryButton">
+                                <button><i class="fa fa-chevron-left" aria-hidden="true"></i>prev
+                                </button>
+                                <button>next<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="libraryAllModule">
+                                <button>View All Modules <i class="fa fa-search" aria-hidden="true"></i>
+</button>
+                            </div>
+                        </div>
+                        <!--Library end--> 
+
+                        <!--end main data container -->
+
+                    </div>
 
                 </div>
-
-            </div>
 
             </div>
 

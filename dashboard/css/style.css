@@ -414,12 +414,12 @@ background: #fff;
     padding:10px;
 }
 
-.libraryModelBody{
+/*.libraryModelBody{
     width: 48%;
     float: left;
     margin-left: 5px;
     margin-right: 5px;
-}
+}*/
 .libraryModelImgContainer{
     width: 150px;
 height: 110px;
@@ -446,9 +446,100 @@ overflow: hidden;
   display:none;
       overflow: auto;
 }
+
+.libraryButton{
+    display: flex;
+justify-content: space-between;
+}
+.libraryButton button i, .libraryAllModule button i{
+    margin:5px
+}
+
+.libraryButton button:hover, .libraryAllModule button:hover{
+    background: #eabc00;transition: 0.5s all;
+}
+.libraryButton button, .libraryAllModule button{
+        border: none;
+background: #12c2af;
+text-transform: uppercase;
+font-weight: 600;
+font-size: 14px;
+transition: 0.5s all;
+padding: 7px 30px;
+color: #fff;
+border-radius: 45px;
+}
+/*.libraryButton button:first-child{}
+.libraryButton button:last-child{}*/
+
+
+.libraryAllModule{ text-align: center;}
+
+
 /*library end*/
 
+/*upload module*/
+.quickWrapper{
+    /*background: #f2f2f2;*/
+    padding:15px 15px;
+    
+}
 
+.UMBody .lastUploaded{
+  border-bottom: 1px solid #ced4da;  
+}
+
+.UMHeader h3{
+    font-size: 15px;
+font-weight: 600;   
+}
+.inputsContainer{
+    display:flex;
+    align-items: center;
+   justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.inputsContainer div{
+/*flex-grow: 1;*/
+}
+.inputsTitles{}
+.quickWrapper p{ margin:0px; font-size: 15px;}
+
+.UMBody input:focus, .UMBody select:focus{
+box-shadow:none;
+}
+.inputsContainer input, .inputsContainer select {
+width: 250px;
+border: none;
+border-radius: 0px !important;
+border-bottom: 2px solid teal;
+background: none;
+-moz-appearance: none;
+-webkit-appearance: none;
+
+color: #696969;
+}
+.inputsContainer select {
+    background: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center;   
+}
+
+.selectVideo .fileSupport{
+        font-size: 13px;
+    margin-bottom: 10px;
+}
+.inputsContainer inputs{
+}
+.inputsContainer inputs{
+    text-align:right;
+}
+.quickWrapper input[type=file]{
+    border: 1px solid #a2a2a2;
+    padding: 11px;
+}
+/*upload module end*/
 
 /*home page css end*/
 

@@ -26,7 +26,7 @@ $('.homeSidebar li').click(function(){
     }
          if(id=="library"){
         $('.homeData').hide();
-        $('#favourites').slideDown(500);
+        $('#library').slideDown(500);
     }
 
 });

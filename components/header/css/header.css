@@ -121,7 +121,10 @@ text-transform:capitalize;
 }
 .quickLinks ul li:hover a{
     text-shadow:none;
-    color: #ECBE04;
+    /*color: #ECBE04;*/
+    color: #ffce05;
+/*    text-shadow: 1px 1px 2px #020202;*/
+    transition: all 0.5s;
 }
 .quickLinks ul > .popArrow{
     position:absolute;

@@ -459,15 +459,15 @@ justify-content: space-between;
     background: #eabc00;transition: 0.5s all;
 }
 .libraryButton button, .libraryAllModule button{
-        border: none;
+border: none;
 background: #12c2af;
 text-transform: uppercase;
 font-weight: 600;
 font-size: 14px;
 transition: 0.5s all;
-padding: 7px 30px;
+padding: 5px 30px;
 color: #fff;
-border-radius: 45px;
+/*border-radius: 45px;*/
 }
 /*.libraryButton button:first-child{}
 .libraryButton button:last-child{}*/
@@ -478,13 +478,17 @@ border-radius: 45px;
 
 /*library end*/
 
-/*upload module*/
+/*upload module all quick links pages*/
 .quickWrapper{
-    /*background: #f2f2f2;*/
-    padding:15px 15px;
+
     
 }
-
+.folder{
+    text-align: center;
+}
+.folder img{
+    width:100px;
+}
 .UMBody .lastUploaded{
   border-bottom: 1px solid #ced4da;  
 }
@@ -513,12 +517,19 @@ box-shadow:none;
 width: 250px;
 border: none;
 border-radius: 0px !important;
-border-bottom: 2px solid teal;
 background: none;
 -moz-appearance: none;
 -webkit-appearance: none;
-
+border: 1px solid #ddd;
 color: #696969;
+}
+.inputs textarea:focus{
+    box-shadow:none;
+}
+.inputs textarea{
+    border-radius: 0px;
+    margin-bottom:10px;
+      margin-top:10px;
 }
 .inputsContainer select {
     background: url("../img/arrow.png");
@@ -538,6 +549,77 @@ color: #696969;
 .quickWrapper input[type=file]{
     border: 1px solid #a2a2a2;
     padding: 11px;
+}
+.savebtn:hover{
+    background: #ffce05;
+}
+.savebtn i{
+    margin-left:5px;
+}
+.savebtn{
+            border: none;
+background: #12c2af;
+text-transform: uppercase;
+font-weight: 600;
+font-size: 14px;
+transition: 0.5s all;
+padding: 5px 30px;
+color: #fff;
+}
+.viewLessonBody{
+padding: 15px;
+box-shadow: 0px 0px 3px #999;
+background: #fff;
+margin-top: -3px;
+
+}
+.classNav button:hover{background: #ffce05;}
+.classNav button{
+                border: none;
+background: #12c2af;
+text-transform: uppercase;
+font-weight: 600;
+font-size: 14px;
+transition: 0.5s all;
+padding: 5px 30px;
+color: #fff;
+}
+.classNavActive::after{
+height: 10px;
+background: #fff;
+left:0;
+
+content: " ";
+position: absolute;
+width: 100%;
+bottom:-4px;
+}
+.classNavActive{
+ box-shadow: 0px 0px 3px #999;
+  background: #fff;
+  position:relative;
+}
+.classNav {
+display: inline-block;
+padding: 10px;
+z-index: 999;
+position: relative;
+margin-right:10px;
+}
+.lessonTable td, .lessonTable  th{
+    padding: 5px 5px;
+}
+
+.lessonTable  td a{ }
+.lessonTable  td{
+    font-size:13px;
+}
+.lessonTable thead th{
+    color:#fff;
+    font-weight:600;
+}
+.lessonTable thead{
+    background: #12c2af;
 }
 /*upload module end*/
 

@@ -28,7 +28,7 @@
                 text-shadow: 1px 1px 4px #020202;
             }
             #mainWrapper{width:100%; box-shadow: 0px 0px 3px #999; margin-top: 50px; margin-bottom:65px;}
-            .quickLinks > ul > li a.umodule{color:#edc319;}
+            .quickLinks > ul > li a.clesson{color:#edc319;}
 
         </style>
     </head>
@@ -47,17 +47,15 @@
                     <div class="quickWrapper">
                         <div class="UMHeader">
                             <div class="row">
-                            <div class="col-md-12"><h3>Upload Modules</h3></div>
+                            <div class="col-md-12"><h3>Create Lesson Plan</h3></div>
                             </div>
                         </div>
                         <div class='UMBody'>
                             <div class="row">
 
                                 <div class="col-md-6">
-                                    <div class="inputsContainer">
-                                        <div class="inputsTitles"><p>Type Your Module Name </p></div>
-                                        <div class="inputs"><input type="text" class="form-control" placeholder="Module Name"></div>
-                                    </div>
+                                    <div class="inputs"><input type="text" class="form-control" style="border-radius:0px; margin-bottom:10px;" placeholder="Type Lesson Plan Name"></div>
+                                  
                                     <div class="inputsContainer">
                                         <div class="inputsTitles"><p>Select Class :</p></div>
                                         <div class="inputs">
@@ -72,7 +70,7 @@
                                         <div class="inputsTitles"><p>Select Subject :</p></div>
                                         <div class="inputs">
                                             <select class="form-control">
-                                                <option>Select: Class</option>
+                                                <option>Select: Subject</option>
                                                 <option>sdsdsd</option>
                                                 <option>ccc</option>
                                             </select>
@@ -80,44 +78,55 @@
                                     </div>
 
                                     <div class="inputsContainer">
-                                        <div class="inputsTitles"><p>Select Chapter :</p></div>
+                                        <div class="inputsTitles"><p>Select Date :</p></div>
                                         <div class="inputs">
-                                            <select class="form-control">
-                                                <option>Select: Class</option>
-                                                <option>sdsds</option>
-                                                <option>ccc</option>
-                                            </select>
+                                            <input type="date" class="form-control"  placeholder="Type Lesson Plan Name">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="inputsContainer">
+                                        <div class="inputsTitles"><p>Time :</p></div>
+                                        <div class="inputs">
+                                            <input type="text" class="form-control"  placeholder="Time...">
                                         </div>
                                     </div>
 
                                     <div class="inputsContainer">
+                                        <div class="inputsTitles"><p>Select Chapter  : </p></div>
+                                        <div class="inputs">
+                                            <select class="form-control">
+                                                <option>Select Chapter...</option>
+                                                <option>sdsdsd</option>
+                                                <option>ccc</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                     <div class="inputsContainer">
                                         <div class="inputsTitles"><p>Select Topic : </p></div>
                                         <div class="inputs">
                                             <select class="form-control">
-                                                <option>Select: Class</option>
+                                                <option>Select Topic..</option>
                                                 <option>sdsdsd</option>
                                                 <option>ccc</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="selectVideo">
-                                        <p style="margin-bottom:10px;">Select an image or video file on your computer </p>
-                                        <input id="file-upload" type="file"/>
-                                        <p class="fileSupport">(Supported formats : doc, docx, rtf, mov, flv, ppt, exl, jpeg, gif, png, max file size:5mb)</p>
+                                    <div class="inputs">
+                                        <textarea class="form-control" placeholder="Please enter overview"></textarea>
                                     </div>
-
-                                    <div>
-
-                                        <input id="fileupload" type="file"/>
-                                        <br>
-                                                                                <br>
-
+                                    <div class="inputs">
+                                        <textarea class="form-control" placeholder="Please enter teacher overview"></textarea>
                                     </div>
-
-
                                 </div>
                                 <div class="col-md-6">
-                                    <p class="lastUploaded">Last Uploaded Resources</p>
+                                    <p class="lastUploaded">Add Resource </p>
+                              
+                                    <div class="inputs">
+                                        <textarea style="border: dotted 2px #999;" class="form-control" placeholder="Add your items here"></textarea>
+                                    </div>
+                                    <div style="text-align:right;">
+                                        <button class="savebtn">SAVE PLAN<i class="fa fa-upload" aria-hidden="true"></i></button>
+                                    </div>
                                 </div>
 
                             </div>

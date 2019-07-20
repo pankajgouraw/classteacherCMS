@@ -184,9 +184,12 @@ height:100%;
 }
 
 #mainWrapper{
-  width:80%; 
-      padding: 0px 15px;
+      width:80%; 
       padding-top:5px; position:relative; 
+       padding:15px; margin-bottom: 25px;
+       background-image: url('../img/flyingBirds.gif');
+           background-size: 100% 100%;
+           background-repeat: no-repeat;
 }
 #sidebarWrapper{
     width:20%;
@@ -233,7 +236,7 @@ cursor:pointer;
  #calendar {
 max-width: 650px;
            }
-                    #mainWrapper{padding:15px; margin-bottom: 50px;}
+                   
                     
 .fc-today
 {
@@ -483,8 +486,18 @@ color: #fff;
 
     
 }
+.plansOverView {margin-bottom:50px;}
+.plansOverView p{font-weight: 600}
+.folder a:hover{
+    text-decoration: none;
+}
+.folder a{
+    color: #383737;
+}
 .folder{
     text-align: center;
+    margin-bottom:50px;
+    cursor:pointer;
 }
 .folder img{
     width:100px;
@@ -610,7 +623,7 @@ margin-right:10px;
     padding: 5px 5px;
 }
 
-.lessonTable  td a{ }
+.lessonTable td a{ color:#b6b6b6; }
 .lessonTable  td{
     font-size:13px;
 }

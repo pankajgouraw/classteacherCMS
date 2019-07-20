@@ -1,0 +1,176 @@
+/*header css*/
+.header{
+    background-image:url('../../../img/headerBackgroud.jpg');
+    background-position: bottom;
+    background-size:cover;
+}
+.header .logo a {display: inline-block;}
+.header .logo img{    width: 150px;}
+.navMenu {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.navMenu ul{
+    margin: 0px;
+    padding: 0px;
+    flex-grow: 1;
+}
+.navMenu ul li{    
+    list-style: none;
+    display: inline-block;
+    margin: 0px 30px; padding: 13px 0px;
+}
+.navMenu ul li a{ display: inline-block; font-size:17px;  }
+.searchBox input{
+    border:1px;
+}
+.searchBox input:focus{
+    box-shadow:none;    
+}
+
+.searchBox .input-group-btn{
+    background: #fff;border-left: 1px solid #ddd;
+
+}
+.searchBox .input-group-btn button:active{
+    background: #EABC00; 
+}
+.searchBox .input-group-btn button{
+    border-radius: 0px;
+}
+
+.searchBox .input-group-btn button:focus{
+    box-shadow:none;
+}
+.searchBox .btn-default i{
+    font-size: 20px;
+    color: #ffc107;
+}
+.profileMenu {   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+.profileMenu ul{margin:0px; padding:0px;}
+.profileMenu ul li{    
+    list-style: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+.profileMenu ul li a{ display: inline-block; }
+.profileMenu ul li .profileName{
+    color:#fff;
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align:center;
+    line-height:23px;
+}
+.profileMenu ul li .logoutButton{ 
+    color: #fbf7f7;
+    background: #1cae8f;
+    padding: 1px 8px 5px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 17px;
+
+}
+
+.quickLinks{
+    position:relative;             
+}
+
+.quickLinks ul li{
+display: block;
+margin: 0px;
+padding: 5px 5px;
+transation :0.5s all;
+text-transform:capitalize;
+}
+.quickLinks ul li a{
+    display:block;
+    color: #898989;
+    font-size:16px;
+    font-weight:600;
+}
+.quickLinks ul li a i{
+    float:right;
+    padding-top:5px;
+}
+
+.quickLinks:hover ul{
+    display:block;
+}
+.quickLinks > ul{
+    width: 280px;
+    position: absolute;
+    top: 50px;
+    z-index: 99999;
+    background: #f2f2f2;
+    box-shadow: 0px 0px 7px #7d7a7a;
+    display:none;
+     left: -91px;
+     padding: 15px;
+}
+.quickLinks ul li:hover{
+/*    transation :0.5s all;
+    box-shadow: 0px 0px 4px #b0b0b0;*/
+}
+.quickLinks ul li:hover a{
+    text-shadow:none;
+    /*color: #ECBE04;*/
+    color: #ffce05;
+/*    text-shadow: 1px 1px 2px #020202;*/
+    transition: all 0.5s;
+}
+.quickLinks ul > .popArrow{
+    position:absolute;
+    left:50%;
+    height:15px;
+    width:15px;
+    top:-7px;
+    transform: translateX(-50%) rotate(45deg);
+    background:#f2f2f2;
+}
+.quickLinks ul .advanceTools:hover li a{
+  color: #898989;
+}
+.quickLinks ul .advanceTools li:hover a{
+   color: #ECBE04; 
+}
+.quickLinks ul .advanceTools li i{
+    float:none;
+    margin-right:5px;
+    font-size:12px;
+}
+.quickLinks ul .advanceTools li{
+    padding-left:15px;
+}
+.quickLinks ul .advanceTools ul{
+    display:none;
+}
+.quickLinks > a i{
+   margin-right:3px; 
+}
+
+@media screen and (max-width:768px){
+    .profileContainer{
+        position: absolute;    
+    }
+    .header .logo img {
+        width: 100px;
+    }
+    .profileMenu{
+        justify-content:flex-end;
+    }
+
+}
+
+/*end header css*/
+
+
+
+

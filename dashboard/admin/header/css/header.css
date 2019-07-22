@@ -1,6 +1,6 @@
 /*header css*/
 .header{
-    background-image:url('../../../img/headerBackgroud.jpg');
+    background-image:url('../../../../img/headerBackgroud.jpg');
     background-position: bottom;
     background-size:cover;
 }
@@ -18,11 +18,15 @@
     flex-grow: 1;
 }
 .navMenu ul li{    
-    list-style: none;
-    display: inline-block;
-    margin: 0px 30px; padding: 13px 0px;
+list-style: none;
+display: inline-block;
+margin: 0px 3px;
+padding: 13px 0px;
 }
-.navMenu ul li a{ display: inline-block; font-size:17px;  }
+.navMenu ul li a{ 
+display: inline-block;
+font-size: 15px;
+}
 .searchBox input{
     border:1px;
 }

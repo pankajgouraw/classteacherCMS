@@ -10,53 +10,14 @@
         <link rel="stylesheet" href="../../css/font-awesome.min.css">
         <link rel="stylesheet" href="../../css/format.css">
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../../components/header/css/header.css">
+        <link rel="stylesheet" href="header/css/header.css">
         <!--<link rel="stylesheet" href="../components/navbar/css/navbar.css">-->
         <link rel="stylesheet" href="../../components/sidebar/css/sidebar.css">
         <link rel="stylesheet" href="../../components/footer/css/footer.css">
         <link rel="stylesheet" href="../../components/navbar/css/navbar.css">
+        <link rel="stylesheet" href="css/admin.css">
 
         <script src="../../js/jquery.js"></script>
-        <!--        <script src="../js/bootstrap.min.js"></script>-->
-        <script src="js/owl.carousel.min.js"></script>
-        <!--calernder code-->
-<!--        <link href='packages/core/main.css' rel='stylesheet' />
-        <link href='packages/daygrid/main.css' rel='stylesheet' />
-        <link href='packages/timegrid/main.css' rel='stylesheet' />
-        <link href='packages/list/main.css' rel='stylesheet' />
-        <script src='packages/core/main.js'></script>
-        <script src='packages/interaction/main.js'></script>
-        <script src='packages/daygrid/main.js'></script>
-        <script src='packages/timegrid/main.js'></script>
-        <script src='packages/list/main.js'></script>-->
-        <script>
-//            document.addEventListener('DOMContentLoaded', function () {
-//                var calendarEl = document.getElementById('calendar');
-//
-//                var calendar = new FullCalendar.Calendar(calendarEl, {
-//                    plugins: ['interaction', 'dayGrid', 'timeGrid'],
-//                    header: {
-//                        left: 'prev,next today',
-//                        center: 'title',
-//                        right: 'dayGridMonth,timeGridWeek,timeGridDay'
-//                    },
-////                     footer: {
-////                      left: 'prev,next today',
-////                      center: 'title',
-////                      right: 'dayGridMonth,timeGridWeek,timeGridDay'
-////                    },
-//                    defaultDate: '2019-06-12',
-//                    navLinks: true, // can click day/week names to navigate views
-//                    businessHours: true, // display business hours
-//                    editable: true
-//
-//                });
-//
-//                calendar.render();
-//            });
-
-        </script>
-
         <!--end calender code--> 
         <style>
 
@@ -88,12 +49,31 @@
                     <!-- sidebar container -->
                     <div class="sidebarWrapper homeSidebarWrapper" id="sidebarWrapper">
                         <aside class="sidebar">
-                            <ul class="homeSidebar">
-                                <li class="homeActive" data-module="calendar">Welcome Teacher</li>
-                                <li data-module="viewModule">last view module</li>
-                                <li data-module="favourites">Favourites</li>
-                                <li data-module="library">Library</li>
-
+                            <ul class="AdminhomeSidebar">
+                                <li class="">Account Dashboard</li>
+                                <li>My Projects</li>
+                                <li class="myClass">My Classes</li>
+                                    <ul class=" adminData myClassDetail">
+                                        <li>Class Junior KG</li>
+                                        <li>Class Senior KG</li>
+                                        <li>Class Nursery</li>
+                                        <li>Class I</li>
+                                        <li>Class II</li>
+                                        <li>Class III</li>
+                                        <li>Class IV</li>
+                                        <li>Class V</li>
+                                        <li>Class VI</li>
+                                        <li>Class VII</li>
+                                        <li>Class VIII</li>
+                                        <li>Class IX</li>
+                                        <li>Class X</li>
+                                        <li>Class XI</li>
+                                        <li>Class XII</li>
+                                    </ul>
+                                <li class="adminAccountInfo">Account Information</li>
+                                    <ul class="adminData adminAccount">
+                                        <li class="changPass">Change Password</li>
+                                    </ul>
                             </ul>
                         </aside>
                     </div>
@@ -101,137 +81,57 @@
 
                     <!-- main data container -->
                     <div class="" id="mainWrapper">
-                        <!--calender-->
-                        <div id='calendar' class="homeData"></div>
-                        <!--calender end here-->
+                        <p class="mydash">My Dashboard</p>
+                        <p>Total Active Projects</p>
+                        <table class="table myDashboard table-responsive">
+                            <thead>
+                               <th>Class</th>
+                               <th>Subject</th>
+                               <th>Chapter </th>
+                               <th>Module Name </th>
+                               <th>Topics</th>
+                               <th>Assigned by </th>
+                               <th>StartDate/EndTime</th>
+                               <th>Update status</th>
+                               <th>Current status</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>asdf</td>
+                                    <td>ere</td>
+                                    <td>fgh</td>
+                                    <td>hhgj</td>
+                                    <td>wer</td>
+                                    <td>vbf</td>
+                                    <td>hjn</td>
+                                    <td>sdfsdf</td>
+                                    <td>qwe</td>
 
-                        <!--view all module-->
-                        <div id="viewModule" class="homeData">
-                            <div class="viewModelHeader">
-                                <h3>Last View Module</h3>
-                                <select class="form-control">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                </select>
-                            </div>
-                            <div class="viewModelBody">
-                                <div class="viewModelContent">
-                                    <div class="viewModelImgContainer">
-                                        <img src="img/img1.png" >
-                                    </div>
-                                    <div class="viewModelData">
-
-                                        <h4>sdfsdfsdf</h4>
-                                        <p>Lorem ipsum doller amet </p>
-                                        <p class="viewModelDate">Last view on 16/05/2017 12:00</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="viewModelBody">
-                                <div class="viewModelContent">
-                                    <div class="viewModelImgContainer">
-                                        <img src="img/img1.png" >
-                                    </div>
-                                    <div class="viewModelData">
-
-                                        <h4>sdfsdfsdf</h4>
-                                        <p>Lorem ipsum doller amet </p>
-                                        <p class="viewModelDate">Last view on 16/05/2017 12:00</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--view all module end here-->
-
-                        <!--favourites-->
-                        <div id="favourites" class="homeData">
-                            <div class="favouritesModelHeader">
-                                <h3>Favourites</h3>
-
-                            </div>
-                            <div class="favouritesModelBody">
-                                <div class="favouritesModelContent">
-                                    <div class="favouritesModelImgContainer">
-                                        <img src="img/img1.png" >
-                                    </div>
-                                    <div class="favouritesModelData">
-
-                                        <h4>sdfsdfsdf</h4>
-                                        <p>Lorem ipsum doller amet </p>
-                                        <p class="favouritesModelDate">Last view on 16/05/2017 12:00</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="favouritesModelBody">
-                                <div class="favouritesModelContent">
-                                    <div class="favouritesModelImgContainer">
-                                        <img src="img/img1.png" >
-                                    </div>
-                                    <div class="favouritesModelData">
-
-                                        <h4>sdfsdfsdf</h4>
-                                        <p>Lorem ipsum doller amet </p>
-                                        <p class="favouritesModelDate">Last view on 16/05/2017 12:00</p>
-                                    </div>
-                                </div>
-                            </div>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--end main data container -->
+                    
+                    <div class="loginPop">
+                        <div class="loginHeader">
+                            <p>Change Password</p>
+                                                        <div class="crossChangePass">x</div>
 
                         </div>
-
-                        <!--favourites  end-->
-
-                        <!--Library-->
-
-                        <div id="library" class="homeData">
-                            <div class="libraryModelHeader">
-                                <h3>Library</h3>
-
-                            </div>
-                            <div class="libraryModelBody">
-                                <div class="libraryModelContent">
-                                    <div class="libraryModelImgContainer">
-                                        <img src="img/img1.png" >
-                                    </div>
-                                    <div class="libraryModelData">
-
-                                        <h4>sdfsdfsdf</h4>
-                                        <p>Lorem ipsum doller amet </p>
-                                        <p class="libraryModelDate">Last view on 16/05/2017 12:00</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="libraryModelBody">
-                                <div class="libraryModelContent">
-                                    <div class="libraryModelImgContainer">
-                                        <img src="img/img1.png" >
-                                    </div>
-                                    <div class="libraryModelData">
-
-                                        <h4>sdfsdfsdf</h4>
-                                        <p>Lorem ipsum doller amet </p>
-                                        <p class="libraryModelDate">Last view on 16/05/2017 12:00</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="libraryButton">
-                                <button><i class="fa fa-chevron-left" aria-hidden="true"></i>prev
-                                </button>
-                                <button>next<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-                            </div>
-                            <div class="libraryAllModule">
-                                <button>View All Modules <i class="fa fa-search" aria-hidden="true"></i>
-</button>
-                            </div>
+                        <div class="loginBody">
+                            <!--<p>javed@classteacher.com</p>-->
+                            
+                            <p>Enter Old Password :</p>
+                            <input type="text" class="form-control" />
+                            
+                            <p>Enter New Password :</p>
+                            <input type="text" class="form-control" />
+                            
+                            <p>
+                                <button type="button">SAVE</button>
+                            </p>
                         </div>
-                        <!--Library end--> 
-
-                        <!--end main data container -->
-
                     </div>
 
                 </div>
